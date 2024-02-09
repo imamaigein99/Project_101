@@ -1,7 +1,7 @@
 # Project_101
 Endpoint to receive GET, POST and DELETE request from users to manage students 
 
-# Sample Request Below: 
+Sample Request Below: 
 
 # Create a Student resource
 curl --location 'http://localhost:8100/students/' \
