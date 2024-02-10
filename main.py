@@ -3,8 +3,15 @@ from pydantic import BaseModel
 from typing import Dict
 import logging
 
+
 # FastAPI app instance
-app = FastAPI()
+app = FastAPI(
+    title="Student Management API",
+    description="An API to manage student records",
+    version="1.0.0",
+    docs_url="/docs",  # Endpoint for Swagger UI
+    redoc_url=None,    # Disable ReDoc
+)
 
 # In-memory storage using Python dictionary
 storage: Dict[int, dict] = {}
